@@ -1,0 +1,684 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap");
+
+body {
+  background-color: #101820;
+}
+
+/* navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-family: Outfit;
+}
+
+/* intro */
+.intro {
+  position: relative;
+  background: black;
+  height: 90vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.intro video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  opacity: 0.5;
+  z-index: 0;
+  -webkit-transform: translateX(-50) translateY(-50%);
+  /*untuk chrome*/
+  transform: translate(-50%) translateY(-50%);
+  /*untuk default*/
+}
+
+.intro .container {
+  position: relative;
+  z-index: 2;
+}
+
+.intro .overlay-wcs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .intro {
+    min-height: 600px;
+  }
+}
+
+.font_intro {
+  font-weight: 800;
+  font-family: "Outfit", sans-serif;
+  font-size: 50px;
+}
+
+/* about */
+.font_about {
+  font-weight: 300;
+  font-family: "Outfit", sans-serif;
+  color: white;
+}
+
+.about {
+  background-color: #101820(0, 0%, 100%);
+  border-radius: 0px 0px 0px 0px;
+  width: 100%;
+  height: auto;
+  color: black;
+}
+
+.about_Us {
+  background-color: #ffffff;
+  border-radius: 0px 0px 0px 0px;
+  width: 100%;
+  height: auto;
+  color: black;
+}
+
+/* Produk */
+.produk {
+  background-color: white;
+  border-radius: 85px 85px 0px 0px;
+  width: 100%;
+  height: auto;
+  color: black;
+}
+
+.produk .col-lg-7 {
+  padding-top: 100px;
+}
+
+@media (max-width: 770px) {
+  .produk {
+    border-radius: 50px 50px 0px 0px;
+  }
+
+  .produk .col-lg-7 {
+    padding-top: 60px;
+  }
+}
+
+.card img {
+  height: auto;
+  width: 100%;
+}
+
+/* brand */
+.brand .container {
+  margin-top: 10rem;
+  background-color: white;
+}
+
+.brand .col-lg-7 {
+  padding-top: 50px;
+}
+
+/* hero */
+.hero-top {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./img/banner/MOTO.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./img/banner/moto1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(60%);
+}
+
+.hero-content {
+  position: relative;
+  font-family: "Outfit", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0.625rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.hero-subtitle {
+  font-weight: 300;
+  margin-top: 1rem;
+
+  color: white;
+}
+
+/* brand */
+.brand .container {
+  margin-top: 10rem;
+  background-color: white;
+  border-radius: 85px;
+}
+
+.brand .col-lg-7 {
+  padding-top: 50px;
+}
+
+/* brand about*/
+.brand2 .container {
+  margin-top: 10rem;
+  background-color: white;
+  border-radius: 85px;
+  padding-top: 50px;
+}
+
+/* Keuntungan */
+.profit {
+  width: 100%;
+  height: auto;
+}
+
+.nav-pills {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+}
+
+/* Navigasi */
+/* 1. tdk aktif */
+.nav-pills .pill-1 .nav-link:not(.active) {
+  background-color: #101820;
+  color: white;
+}
+
+.nav-pills .pill-2 .nav-link:not(.active) {
+  background-color: #101820;
+  color: white;
+}
+
+.nav-pills .pill-3 .nav-link:not(.active) {
+  background-color: #101820;
+  color: white;
+}
+
+/*2. aktif */
+.nav-pills .pill-1 .nav-link {
+  background-color: #1a9425;
+  color: white;
+}
+
+.nav-pills .pill-2 .nav-link {
+  background-color: #1a9425;
+  color: white;
+}
+
+.nav-pills .pill-3 .nav-link {
+  background-color: #1a9425;
+  color: white;
+}
+
+/* akhir navigasi */
+
+.tab-content {
+  background-color: white;
+  border-radius: 50px;
+  display: inline-block;
+  width: 70%;
+  font-family: "Outfit", sans-serif;
+  height: auto;
+}
+
+@media (max-width: 870px) {
+  .tab-content {
+    width: 90%;
+  }
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-products {
+  padding: 80px 0 54px;
+}
+
+.section-products .header {
+  margin-bottom: 50px;
+  font-family: Fredoka;
+}
+
+.section-products .header h3 {
+  font-size: 1rem;
+  color: #fe302f;
+  font-weight: 500;
+  font-family: Outfit;
+}
+
+.section-products .header h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: Outfit;
+}
+
+.section-products .single-product {
+  margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+  position: relative;
+  height: 290px;
+  max-height: 290px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+  transform: scale(1.2, 1.2) rotate(5deg);
+}
+
+.section-products .part-1::before {
+  background-color: #ffffff;
+  background-size: 80%;
+}
+
+.section-products #product-1 .part-1::before {
+  background: url("img/produk/ink.png") no-repeat center;
+  background-size: 75%;
+  transition: all 0.3s;
+  background-color: #ffffff;
+}
+
+.section-products #product-2 .part-1::before {
+  background: url("img/produk/ink2.png") no-repeat center;
+  background-size: 75%;
+  background-color: #ffffff;
+}
+
+.section-products #product-3 .part-1::before {
+  background: url("img/produk/ink3.png") no-repeat center;
+  background-size: 105%;
+  background-color: #ffffff;
+}
+
+.section-products #product-4 .part-1::before {
+  background: url("img/produk/zeus\ helm.png") no-repeat center;
+  background-size: 75%;
+  background-color: #ffffff;
+}
+
+.section-products #product-5 .part-1::before {
+  background: url("img/produk/jpx.png") no-repeat center;
+  background-size: 120%;
+  transition: all 0.3s;
+  background-color: #ffffff;
+}
+
+.section-products #product-6 .part-1::before {
+  background: url("img/produk/kyt\ balap.png") no-repeat center;
+  background-size: 78%;
+  background-color: #ffffff;
+}
+
+.section-products #product-7 .part-1::before {
+  background: url("img/produk/airoh.png") no-repeat center;
+  background-size: 78%;
+  background-color: #ffffff;
+}
+
+.section-products #product-8 .part-1::before {
+  background: url("img/produk/helmJPN.png") no-repeat center;
+  background-size: 84%;
+  background-color: #ffffff;
+}
+
+/*product2*/
+.section-products #product-9 .part-1::before {
+  background: url("img/produk/JPX_MX-726_BLACK.png") no-repeat center;
+  background-size: 120%;
+  transition: all 0.3s;
+  background-color: #ffffff;
+}
+
+.section-products #product-10 .part-1::before {
+  background: url("img/produk/JPX_MX-726_YELLOW.png") no-repeat center;
+  background-size: 120%;
+  background-color: #ffffff;
+}
+
+.section-products #product-11 .part-1::before {
+  background: url("img/produk/KYT\ NZ.png") no-repeat center;
+  background-size: 75%;
+  background-color: #ffffff;
+}
+
+.section-products #product-12 .part-1::before {
+  background: url("img/produk/KYT\ NZ\ RACING.png") no-repeat center;
+  background-size: 75%;
+  background-color: #ffffff;
+}
+
+/*product*/
+.section-products #product-13 .part-1::before {
+  background: url("img/produk/RETO_CAKIL_GREEN.png") no-repeat center;
+  background-size: 95%;
+  transition: all 0.3s;
+  background-color: #ffffff;
+}
+
+.section-products #product-14 .part-1::before {
+  background: url("img/produk/HelmHonda.png") no-repeat center;
+  background-size: 90%;
+  background-color: #ffffff;
+}
+
+.section-products #product-15 .part-1::before {
+  background: url("img/produk/CKIL_HBC_RUST.png") no-repeat center;
+  background-size: 80%;
+  background-color: #ffffff;
+}
+
+.section-products #product-16 .part-1::before {
+  background: url("img/produk/NJS_NX2_BLACK.png") no-repeat center;
+  background-size: 90%;
+  background-color: #ffffff;
+}
+
+/*product3*/
+.section-products #product-17 .part-1::before {
+  background: url("img/produk/JP_6.png") no-repeat center;
+  background-size: 110%;
+  transition: all 0.3s;
+  background-color: #ffffff;
+}
+
+.section-products #product-18 .part-1::before {
+  background: url("img/produk/CAKIL_HBC_WHITE.png") no-repeat center;
+  background-size: 75%;
+  background-color: #ffffff;
+}
+
+.section-products #product-19 .part-1::before {
+  background: url("img/produk/SAM_4014.png") no-repeat center;
+  background-size: 80%;
+  background-color: #ffffff;
+}
+
+.section-products #product-20 .part-1::before {
+  background: url("img/produk/hbc_pilot.png") no-repeat center;
+  background-size: 80%;
+  background-color: #ffffff;
+}
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #ffffff;
+  background-color: #fe302f;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+  left: 0;
+  background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+  position: absolute;
+  bottom: -41px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+  transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+  color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.section-products .single-product .part-2 h4 {
+  display: inline-block;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+  position: relative;
+  padding: 0 7px;
+  margin-right: 2px;
+  opacity: 0.6;
+  color: #ffffff;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #444444;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid transparent;
+  border-radius: 0;
+}
+
+.card .card-subtitle {
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: #8898aa;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-list li {
+  margin-bottom: 10px;
+}
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.pagination li a {
+  display: block;
+  padding: 5px 10px;
+  background-color: lightgray;
+  text-decoration: none;
+  color: black;
+}
+
+.pagination li.active a {
+  background-color: gray;
+  color: white;
+}
+
+/* footer */
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+/* Tombol naik */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 200px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* ----------------------------------------Animasi-------------------------------------------- */
+.naik {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.tampil {
+  position: relative;
+  transform: translateY(0px);
+  opacity: 1;
+}

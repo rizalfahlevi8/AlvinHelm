@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Alvin Helm</title>
+  <link href="img/faticon/output-onlinepngtools.png" rel="shortcut icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+  <!-- EFEK SCROLL -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top" style="background-color: #101820">
+    <div class="container">
+      <a class="navbar-brand" href="#">Alvin Helm</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
+
+  <!-- Carousel -->
+  <section class="container" style="padding: 40px 40px" data-aos="zoom-out-up" data-aos-duration="2000"
+    data-aos-delay="200">
+    <!-- [style="padding-bottom: 100px;] Untuk memberi jarak antara style atas dan bawah -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" style="border-radius: 30px 30px 30px 30px">
+        <div class="carousel-item active">
+          <img src="img/CarouselProduk/img1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/CarouselProduk/img4.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/CarouselProduk/img5.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- Akhir Carousel -->
+
+  <!-- New Product -->
+  <!-- partial:index.partial.html -->
+  <section class="section-products" id="section-products">
+    <div class="container" data-aos="fade-up" data-aos-duration="2000">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="header">
+            <h3>Featured Product</h3>
+            <h1>New Product</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-1" class="single-product">
+            <div class="part-1" style="border-radius: 10px 10px 10px 10px">
+              <span class="new">INK</span>
+              <ul>
+                <li>
+                  <a href="productDetail.html#INKTHUNDER"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <a href="productDetail.html#INKTHUNDER">
+                <h3 class="product-title">INK Trooper Thunder</h3>
+              </a>
+              <h4 class="product-old-price">Rp 700.000</h4>
+              <h4 class="product-price">Rp 695.000</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-6" class="single-product">
+            <div class="part-1" style="border-radius: 10px 10px 10px 10px">
+              <span class="new">KYT</span>
+              <ul>
+                <li>
+                  <a href="productDetail.html#KYTNZ"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <a href="productDetail.html#KYTNZ">
+                <h3 class="product-title">KYT HELM NZ RACE BASTIANINI REPLIKA 2022</h3>
+              </a>
+              <h4 class="product-old-price">Rp4.200.000</h4>
+              <h4 class="product-price">Rp4.032.000</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-2" class="single-product">
+            <div class="part-1" style="border-radius: 10px 10px 10px 10px">
+              <span class="new">INK</span>
+              <ul>
+                <li>
+                  <a href="productDetail.html#INKSOLID"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <a href="productDetail.html#INKSOLID">
+                <h3 class="product-title">INK Adventure solid black</h3>
+              </a>
+              <h4 class="product-old-price">Rp 1.130.000</h4>
+              <h4 class="product-price">Rp 900.000</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-7" class="single-product">
+            <div class="part-1" style="border-radius: 10px 10px 10px 10px">
+              <span class="new">Airoh</span>
+              <ul>
+                <li>
+                  <a href="productDetail.html#AIROH"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <a href="productDetail.html#AIROH">
+                <h3 class="product-title">Airoh ST701 Way Yellow Gloss</h3>
+              </a>
+              <h4 class="product-old-price">Rp 5.500.000</h4>
+              <h4 class="product-price">Rp 4.950.000</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="pagination">
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="New product2.html">2</a></li>
+    </ul>
+  </section>
+  <!-- partial -->
+  <!-- Akhir New Product -->
+
+  <!-- =============================================================================================================================== -->
+
+  <!-- partial:index.partial.html -->
+  <section class="section-products" id="section-products1">
+    <div class="container" data-aos="fade-up" data-aos-duration="2000">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="header">
+            <h1>Product</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-3" class="single-product">
+            <div class="part-1" style="border-radius: 10px 10px 10px 10px">
+              <span class="new">JPX</span>
+              <ul>
+                <li>
+                  <a href="productDetail.html#JPXMX"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <a href="productDetail.html#JPXMX">
+                <h3 class="product-title">JPX MX-726R Rans</h3>
+              </a>
+              <h4 class="product-old-price">Rp 550.000</h4>
+              <h4 class="product-price">Rp 540.000</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-4" class="single-product">
+            <div class="part-1" style="border-radius: 10px 10px 10px 10px">
+              <span class="new">ZEUS</span>
+              <ul>
+                <li>
+                  <a href="productDetail.html#ZEUS"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <a href="productDetail.html#ZEUS">
+                <h3 class="product-title">Zeus ZS813 White Fullface Double Visor</h3>
+              </a>
+              <h4 class="product-price">Rp 760.000</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-5" class="single-product">
+            <div class="part-1" style="border-radius: 10px 10px 10px 10px">
+              <span class="new">JPX</span>
+              <ul>
+                <li>
+                  <a href="productDetail.html#JPXWHT"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <a href="productDetail.html#JPXWHT">
+                <h3 class="product-title">JPX MX-726R TRITONE WHITE</h3>
+              </a>
+              <h4 class="product-old-price">Rp540.000</h4>
+              <h4 class="product-price">Rp530.000</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-8" class="single-product">
+            <div class="part-1" style="border-radius: 10px 10px 10px 10px">
+              <span class="new">JPN</span>
+              <ul>
+                <li>
+                  <a href="productDetail.html#JPN"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <a href="productDetail.html#JPN">
+                <h3 class="product-title">Helm JPN ARC Yellow</h3>
+              </a>
+              <h4 class="product-price">Rp145,000</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-13" class="single-product">
+            <div class="part-1" style="border-radius: 10px 10px 10px 10px">
+              <span class="new">HBC</span>
+              <ul>
+                <li>
+                  <a href="productDetail.html#CAKILGREEN"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <a href="productDetail.html#CAKILGREEN">
+                <h3 class="product-title">Cakil Modular Army Doff</h3>
+              </a>
+              <h4 class="product-price">Rp 179.000</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-14" class="single-product">
+            <div class="part-1" style="border-radius: 10px 10px 10px 10px">
+              <span class="new">KYT</span>
+              <ul>
+                <li>
+                  <a href="productDetail.html#HONDAKYT"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <a href="productDetail.html#HONDAKYT">
+                <h3 class="product-title">Honda Racing HRR KYT L</h3>
+              </a>
+              <h4 class="product-price">583.000</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-15" class="single-product">
+            <div class="part-1" style="border-radius: 10px 10px 10px 10px">
+              <span class="new">HBC</span>
+              <ul>
+                <li>
+                  <a href="productDetail.html#CAKILRUST"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <a href="productDetail.html#CAKILRUST">
+                <h3 class="product-title">Cakil HBC RUST</h3>
+              </a>
+              <h4 class="product-price">Rp 359.900</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-16" class="single-product">
+            <div class="part-1" style="border-radius: 10px 10px 10px 10px">
+              <span class="new">NJS</span>
+              <ul>
+                <li>
+                  <a href="productDetail.html#NJSBLACK"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <a href="productDetail.html#NJSBLACK">
+                <h3 class="product-title">NJS NX2 Solid Black Doff</h3>
+              </a>
+              <h4 class="product-price">Rp 295.000</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="pagination">
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="New product3.html">2</a></li>
+    </ul>
+  </section>
+  <!-- partial -->
+
+  <!-- Footer -->
+  <section>
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="https://www.instagram.com/alvin_grosir_helm/?hl=id" target="_blank"><i
+              class="bi bi-instagram"></i></a>
+          <a href="http://wa.me/6281232246565"><i class="bi bi-whatsapp" target="_blank"></i></a>
+          <a href="https://www.facebook.com/ALVIN.GROSIR.HELM/" target="_blank"><i class="bi bi-facebook"></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="index.html">Home</a></li>
+          <li class="list-inline-item"><a href="about.html">About</a></li>
+          <li class="list-inline-item"><a href="product.html">Produk</a></li>
+          <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="copyright">Alvin Helm © 2023</p>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Akhir Footer -->
+
+  <!-- Scroll to Top -->
+  <button onclick="topFunction()" class="btn btn-floating mb-1" id="myBtn" title="Go to top"><i
+      class="bi bi-arrow-up-circle-fill"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- EFEK SCROLL -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- JAVA SCRIPT -->
+  <script src="script.js"></script>
+
+  <!-- Scroll to Top -->
+  <button onclick="topFunction()" class="btn btn-floating mb-1" id="myBtn" title="Go to top"><i
+      class="bi bi-arrow-up-circle-fill"></i></button>
+</body>
+
+</html>
