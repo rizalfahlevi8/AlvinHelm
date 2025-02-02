@@ -4,7 +4,7 @@
 
 This is a company profile website for a helmet store built using Bootstrap.
 
-Link Company Profile Helmet Store : [Company Profile (click)](https://rizalfahlevi8.github.io/AlvinHelm/)
+Link Company Profile Helmet Store : [Company Profile (click)](https://rizalfahlevi8.github.io/Company-Profile/)
 
 ## Technology Used
 
@@ -17,17 +17,17 @@ Link Company Profile Helmet Store : [Company Profile (click)](https://rizalfahle
 
 1. Clone this repository to your local server.
     ```
-    git clone https://github.com/rizalfahlevi8/scientific-calculator.git
+    git clone https://github.com/rizalfahlevi8/company-profile.git
     ```
 2. Open the project directory.
     ```
-    cd scientific-calculator
+    cd company-profile
     ```
 3. Open the **index.html** file in your web browser.
 
 ## Contribution
 
-We welcome contributions from anyone who wants to participate in the development of the "Scientific Calculator" application. If you would like to contribute, please create a pull request and we will review your contribution.
+We welcome contributions from anyone who wants to participate in the development of the "Company Profile Helmet Store" application. If you would like to contribute, please create a pull request and we will review your contribution.
 
 ## Contact
 If you have questions or problems, don't hesitate to contact us via the social media listed on [our profile page.](https://github.com/rizalfahlevi8)
